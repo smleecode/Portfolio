@@ -28,15 +28,6 @@ function menuToggle(){
 
 document.getElementById('toggleBtn').addEventListener('click', menuToggle);
 
-function moveTo(id) {
-  if(id == 'home'){
-    window.scrollTo(0, 0);
-  } else {
-    window.scrollTo(0, document.getElementById(id).offsetTop - 70);
-  }
-  document.getElementById('menu').classList.remove('show');
-}
-
 /* WELCOME AREA */
 var imageSlideIndex = 1;
 showImageSlides(imageSlideIndex);
