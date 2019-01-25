@@ -70,23 +70,22 @@ function showImageSlides(n) {
 
 
 /* PORTFOLIO AREA */
-filterSelection({"target":{"id":"all"}});
+filterSelection('all');
 
-function filterSelection(event) {
-  var x, i, c;
-  c = event.target.id;
+function filterSelection(id) {
+  var x, i;
 
   x = document.getElementsByClassName('listItem');
   for(i=0;i<x.length;i++){
     removeClass(x[i], 'active');
   }
-  addClass(document.getElementById(c), 'active');
+  addClass(document.getElementById(id), 'active');
 
   x = document.getElementsByClassName('filterItem');
-  if(c == 'all') c = '';
+  if(id == 'all') id = '';
   for(i=0;i<x.length;i++){
     removeClass(x[i], 'show');
-    if(x[i].className.indexOf(c) > -1)
+    if(x[i].className.indexOf(id) > -1)
       addClass(x[i], 'show');
   }
 }
@@ -108,10 +107,10 @@ function removeClass(element, name) {
  element.className = arr.join(" ");
 }
 
-document.getElementById('all').addEventListener('click', filterSelection);
-document.getElementById('uiux').addEventListener('click', filterSelection);
-document.getElementById('java').addEventListener('click', filterSelection);
-document.getElementById('db').addEventListener('click', filterSelection);
+document.getElementById('all').addEventListener('click', filterSelection.bind(null, 'all'));
+document.getElementById('uiux').addEventListener('click', filterSelection.bind(null, 'uiux'));
+document.getElementById('java').addEventListener('click', filterSelection.bind(null, 'java'));
+document.getElementById('db').addEventListener('click', filterSelection.bind(null, 'db'));
 
 function viewPortfolio(event) {
   var img = event.target.nextElementSibling.src;
