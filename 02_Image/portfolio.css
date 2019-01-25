@@ -177,27 +177,6 @@ ul {
 	margin: 0 auto;
 }
 
-section {
-	padding: 100px 0;
-}
-
-.title {
-	font-size: 50px;
-	font-weight: bold;
-	text-align: center;
-	letter-spacing: 3px;
-	padding-bottom: 100px;
-}
-
-.title::after {
-	content: "";
-	display: block;
-	width: 100px;
-	height: 10px;
-	margin: 0 auto;
-	background-image: linear-gradient(to right, royalblue, aquamarine);
-}
-
 /* WELCOME AREA */
 .welcome-area {
 	height: auto;
@@ -212,8 +191,8 @@ section {
 	height: 100%;
 }
 
-.welcome-area > .container > .imagePrev,
-.welcome-area > .container > .imageNext {
+.welcome-area > .container > .image-prev,
+.welcome-area > .container > .image-next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -228,13 +207,13 @@ section {
 	user-select: none;
 }
 
-.welcome-area > .container > .imageNext {
+.welcome-area > .container > .image-next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
 
-.welcome-area > .container > .imagePrev:hover,
-.welcome-area > .container > .imageNext:hover {
+.welcome-area > .container > .image-prev:hover,
+.welcome-area > .container > .image-next:hover {
 	background-color: rgba(0,0,0,0.8);
 }
 
@@ -261,18 +240,18 @@ section {
 }
 
 .welcome-area > .container > .fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
 	animation-name: fade;
 	animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
 }
 
 @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
 	from {opacity: .4} 
 	to {opacity: 1}
 }

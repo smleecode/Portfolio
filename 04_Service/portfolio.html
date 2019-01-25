@@ -1,35 +1,35 @@
 <!DOCTYPE HTML>
-<!-- saved from url=(0013)about:internet -->
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-	<!-- <link rel="icon" href="favicon.ico"> -->
+	<title>Portfolio</title>
+	<!-- 인터넷 익스플로러에서 자바스크립트 관련 차단된 컨텐츠 허용 뜨는것 방지-->
+	<!-- saved from url=(0013)about:internet -->
 
 	<!-- icon -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR" rel="stylesheet">
 
 	<!-- user style -->
 	<link rel="stylesheet" href="portfolio.css">
+
 </head>
 <body>
 
 	<header class="header-area navbar-fade" id="header">
 		<nav class="navbar">
-			<a class="navbar-brand" onclick="moveTo('home')">logo</a>
+			<a class="navbar-brand" id="navbarBrand">logo</a>
 			<a class="navbar-toggler" id="toggleBtn"><i class="fa fa-bars"></i></a>
 			<div class="navbar-menu" id="menu">
-				<div class="nav-item"><a class="nav-link" onclick="moveTo('about')">about</a></div>
-				<div class="nav-item"><a class="nav-link" onclick="moveTo('service')">service</a></div>
-				<div class="nav-item"><a class="nav-link" onclick="moveTo('portfolio')">portfolio</a></div>
-				<div class="nav-item"><a class="nav-link" onclick="moveTo('review')">review</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarAbout">about</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarService">service</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarPortfolio">portfolio</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarReview">review</a></div>
 			</div>
 		</nav>
 	</header>
@@ -54,18 +54,18 @@
 					<div class="numbertext"></div>
 				</div>
 
-				<a class="imagePrev" onclick="plusImageSlides(-1)">&#10094;</a>
-				<a class="imageNext" onclick="plusImageSlides(1)">&#10095;</a>
+				<a class="image-prev" id="imagePrev">&#10094;</a>
+				<a class="image-next" id="imageNext">&#10095;</a>
 				
 				<div class="dots">
-					<span class="dot" onclick="currentImageSlide(1)"></span> 
-					<span class="dot" onclick="currentImageSlide(2)"></span> 
-					<span class="dot" onclick="currentImageSlide(3)"></span>
-					<span class="dot" onclick="currentImageSlide(4)"></span>
+					<span class="dot" id="firstDot"></span> 
+					<span class="dot" id="secondDot"></span> 
+					<span class="dot" id="thirdDot"></span>
+					<span class="dot" id="forthDot"></span>
 				</div>
 			</div>
 		</div>
-
+		
 		<section class="about-area" id="about">
 			<div class="title">
 				ABOUT
@@ -119,7 +119,6 @@
 					</a>
 				</div>
 			</div>
-
 		</section>
 
 		<section class="services-area" id="service">
@@ -148,7 +147,7 @@
 			</div>
 		</section>
 	</div>
-	
+
 	<script src="portfolio.js"></script>
 </body>
 </html>

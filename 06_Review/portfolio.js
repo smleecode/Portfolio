@@ -68,6 +68,14 @@ function showImageSlides(n) {
   dots[imageSlideIndex-1].className += ' active';
 }
 
+document.getElementById('imagePrev').addEventListener('click', plusImageSlides.bind(null,-1));
+document.getElementById('imageNext').addEventListener('click', plusImageSlides.bind(null,1));
+
+document.getElementById('firstDot').addEventListener('click', currentImageSlide.bind(null,1));
+document.getElementById('secondDot').addEventListener('click', currentImageSlide.bind(null,2));
+document.getElementById('thirdDot').addEventListener('click', currentImageSlide.bind(null,3));
+document.getElementById('forthDot').addEventListener('click', currentImageSlide.bind(null,4));
+
 
 /* PORTFOLIO AREA */
 filterSelection({"target":{"id":"all"}});
