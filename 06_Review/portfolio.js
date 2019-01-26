@@ -121,15 +121,22 @@ document.getElementById('java').addEventListener('click', filterSelection.bind(n
 document.getElementById('db').addEventListener('click', filterSelection.bind(null, 'db'));
 
 function viewPortfolio(event) {
-  var img = event.target.nextElementSibling.src;
-  var main = event.target.parentNode.nextElementSibling.innerHTML;
-  var sub = event.target.parentNode.nextElementSibling.nextElementSibling.innerHTML;
-  var text = event.target.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML;
+  var polyNode = event.target;
 
-  document.getElementById('modalImage').src = img;
-  document.getElementById('modalMain').innerHTML = main;
-  document.getElementById('modalSub').innerHTML = sub;
-  document.getElementById('modalText').innerHTML = text;
+  if(polyNode.tagName.toLowerCase() == 'i') { polyNode = polyNode.parentNode; }
+
+  var overlayNode = polyNode;
+  var imageNode = overlayNode.nextElementSibling;
+
+  var itemNode = overlayNode.parentNode;
+  var mainNode = itemNode.nextElementSibling;
+  var subNode = mainNode.nextElementSibling;
+  var textNode = subNode.nextElementSibling;
+
+  document.getElementById('modalImage').src = imageNode.src;
+  document.getElementById('modalMain').innerHTML = mainNode.innerHTML;
+  document.getElementById('modalSub').innerHTML = subNode.innerHTML;
+  document.getElementById('modalText').innerHTML = textNode.innerHTML;
 
   document.getElementById('portfolioModal').style.display = 'block';
 }
@@ -185,21 +192,4 @@ function showReviewSlides(n) {
   addClass(review_slides[reviewSlideIndex+1], 'show');
   removeClass(review_slides[reviewSlideIndex+2], 'hide');
   addClass(review_slides[reviewSlideIndex+2], 'show');
-  
 }
-
-/* ANCHOR */
-function moveTo(id) {
-  if(id == 'brand'){
-    window.scrollTo(0, 0);
-  } else {
-    window.scrollTo(0, document.getElementById(id).offsetTop - 70);
-  }
-  document.getElementById('menu').classList.remove('show');
-}
-
-document.getElementById('navbarBrand').addEventListener('click', moveTo.bind(null,'brand'));
-document.getElementById('navbarAbout').addEventListener('click', moveTo.bind(null,'about'));
-document.getElementById('navbarService').addEventListener('click', moveTo.bind(null,'service'));
-document.getElementById('navbarPortfolio').addEventListener('click', moveTo.bind(null,'portfolio'));
-document.getElementById('navbarReview').addEventListener('click', moveTo.bind(null,'review'));

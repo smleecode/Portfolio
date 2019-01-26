@@ -121,15 +121,22 @@ document.getElementById('java').addEventListener('click', filterSelection.bind(n
 document.getElementById('db').addEventListener('click', filterSelection.bind(null, 'db'));
 
 function viewPortfolio(event) {
-  var img = event.target.nextElementSibling.src;
-  var main = event.target.parentNode.nextElementSibling.innerHTML;
-  var sub = event.target.parentNode.nextElementSibling.nextElementSibling.innerHTML;
-  var text = event.target.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML;
+  var polyNode = event.target;
 
-  document.getElementById('modalImage').src = img;
-  document.getElementById('modalMain').innerHTML = main;
-  document.getElementById('modalSub').innerHTML = sub;
-  document.getElementById('modalText').innerHTML = text;
+  if(polyNode.tagName.toLowerCase() == 'i') { polyNode = polyNode.parentNode; }
+
+  var overlayNode = polyNode;
+  var imageNode = overlayNode.nextElementSibling;
+
+  var itemNode = overlayNode.parentNode;
+  var mainNode = itemNode.nextElementSibling;
+  var subNode = mainNode.nextElementSibling;
+  var textNode = subNode.nextElementSibling;
+
+  document.getElementById('modalImage').src = imageNode.src;
+  document.getElementById('modalMain').innerHTML = mainNode.innerHTML;
+  document.getElementById('modalSub').innerHTML = subNode.innerHTML;
+  document.getElementById('modalText').innerHTML = textNode.innerHTML;
 
   document.getElementById('portfolioModal').style.display = 'block';
 }
