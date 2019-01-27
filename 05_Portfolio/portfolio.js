@@ -111,7 +111,7 @@ function removeClass(element, name) {
  while(arr.indexOf(name) > -1){
    arr.splice(arr.indexOf(name), 1);
  }
- 
+ /* 배열의 원소들을 연결하여 하나의 값으로 만듭니다. */
  element.className = arr.join(" ");
 }
 

@@ -475,7 +475,7 @@ section {
 
 .portfolio-area > .container > .filterItem > .image {
 	position: relative;
-	height: auto;
+	max-height: 700px;
 }
 
 @media (min-width: 992px) {
@@ -613,8 +613,8 @@ section {
 	}
 }
 
-.review-area > .container > .prev,
-.review-area > .container > .next {
+.review-area > .container > .review-prev,
+.review-area > .container > .review-next {
 	display: inline-block;
 	position: absolute;
 	top: 50%;
@@ -628,16 +628,16 @@ section {
 	cursor: pointer;
 }
 
-.review-area > .container > .prev {
+.review-area > .container > .review-prev {
 	left: 0;
 }
 
-.review-area > .container > .next {
+.review-area > .container > .review-next {
 	right: 0;
 }
 
-.review-area > .container > .prev:hover,
-.review-area > .container > .next:hover {
+.review-area > .container > .review-prev:hover,
+.review-area > .container > .review-next:hover {
 	color: rgba(0, 0, 0, 0.9);
 }
 

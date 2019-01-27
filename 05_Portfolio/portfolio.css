@@ -475,7 +475,7 @@ section {
 
 .portfolio-area > .container > .filterItem > .image {
 	position: relative;
-	height: auto;
+	max-height: 700px;
 }
 
 @media (min-width: 992px) {
@@ -491,7 +491,7 @@ section {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	transition: all 300ms ease;
+	transition: all 0.3s ease;
 	cursor: pointer;
 }
 
