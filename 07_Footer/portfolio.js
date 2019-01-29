@@ -68,6 +68,14 @@ function showImageSlides(n) {
   dots[imageSlideIndex-1].className += ' active';
 }
 
+document.getElementById('imagePrev').addEventListener('click', plusImageSlides.bind(null,-1));
+document.getElementById('imageNext').addEventListener('click', plusImageSlides.bind(null,1));
+
+document.getElementById('firstDot').addEventListener('click', currentImageSlide.bind(null,1));
+document.getElementById('secondDot').addEventListener('click', currentImageSlide.bind(null,2));
+document.getElementById('thirdDot').addEventListener('click', currentImageSlide.bind(null,3));
+document.getElementById('forthDot').addEventListener('click', currentImageSlide.bind(null,4));
+
 
 /* PORTFOLIO AREA */
 filterSelection('all');
@@ -145,7 +153,6 @@ for(var i=0;i<filterItems.length;i++){
 
 /* REVIEW AREA */
 var reviewSlideIndex = 0;
-showReviewSlides(reviewSlideIndex);
 
 function reviewSlideTimer() {
   plusReviewSlides(1);
@@ -162,17 +169,16 @@ function plusReviewSlides(n) {
 function showReviewSlides(n) {
   var i;
   var review_slides = document.getElementsByClassName('review-slide');
-  var review_slides_length = review_slides.length;
 
-  if (n > review_slides_length - 3) {
+  if (n > review_slides.length - 3) {
     reviewSlideIndex = 0;
   }
 
   if (n < 0) {
-    reviewSlideIndex = review_slides_length - 3;
+    reviewSlideIndex = review_slides.length - 3;
   }
 
-  for (i = 0; i < review_slides_length; i++) {
+  for (i = 0; i < review_slides.length; i++) {
     removeClass(review_slides[i], 'show');
     removeClass(review_slides[i], 'res-show');
     addClass(review_slides[i], 'hide');
