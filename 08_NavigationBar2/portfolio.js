@@ -194,3 +194,19 @@ function showReviewSlides(n) {
 
 document.getElementById('reviewPrev').addEventListener('click', plusReviewSlides.bind(null,-1));
 document.getElementById('reviewNext').addEventListener('click', plusReviewSlides.bind(null,1));
+
+/* ANCHOR */
+function moveTo(id) {
+  if(id == 'brand'){
+    window.scrollTo(0, 0);
+  } else {
+    window.scrollTo(0, document.getElementById(id).offsetTop - 70);
+  }
+  document.getElementById('menu').classList.remove('show');
+}
+
+document.getElementById('navbarBrand').addEventListener('click', moveTo.bind(null,'brand'));
+document.getElementById('navbarAbout').addEventListener('click', moveTo.bind(null,'about'));
+document.getElementById('navbarService').addEventListener('click', moveTo.bind(null,'service'));
+document.getElementById('navbarPortfolio').addEventListener('click', moveTo.bind(null,'portfolio'));
+document.getElementById('navbarReview').addEventListener('click', moveTo.bind(null,'review'));

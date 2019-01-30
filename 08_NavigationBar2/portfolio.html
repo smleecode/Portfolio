@@ -1,0 +1,660 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<title>Portfolio</title>
+	<!-- 인터넷 익스플로러에서 자바스크립트 관련 차단된 컨텐츠 허용 뜨는것 방지-->
+	<!-- saved from url=(0013)about:internet -->
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR" rel="stylesheet">
+
+	<!-- user style -->
+	<link rel="stylesheet" href="portfolio.css">
+
+</head>
+<body>
+
+	<header class="header-area navbar-fade" id="header">
+		<nav class="navbar">
+			<a class="navbar-brand" id="navbarBrand">logo</a>
+			<a class="navbar-toggler" id="toggleBtn"><i class="fa fa-bars"></i></a>
+			<div class="navbar-menu" id="menu">
+				<div class="nav-item"><a class="nav-link" id="navbarAbout">about</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarService">service</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarPortfolio">portfolio</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarReview">review</a></div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="section-container">
+		<div class="welcome-area">
+			<div class="container">
+				<div class="image-slide fade">
+					<img src="img/laptop-2557468_1920.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/computer-1828603_1920.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/laptop-2588606_1920.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/hacker-1569744_1920.jpg">
+					<div class="numbertext"></div>
+				</div>
+
+				<a class="image-prev" id="imagePrev">&#10094;</a>
+				<a class="image-next" id="imageNext">&#10095;</a>
+				
+				<div class="dots">
+					<span class="dot" id="firstDot"></span> 
+					<span class="dot" id="secondDot"></span> 
+					<span class="dot" id="thirdDot"></span>
+					<span class="dot" id="forthDot"></span>
+				</div>
+			</div>
+		</div>
+
+		<section class="about-area" id="about">
+			<div class="title">
+				ABOUT
+			</div>
+			<div class="picture">
+				<img src="img/man-1246508_1920.jpg">
+				<div class="name">NAME</div>
+				<div class="description">JUNIOR DEVELOPER</div>
+			</div>
+			<div class="text">
+				<div class="intro">
+					안녕하세요. 끊임없는 성장을 추구하는 열정있는 주니어 개발자입니다. 신기술에 대한 관심이 많고 재밌는 소규모 프로젝트 위주의 개발을 좋아합니다. 궁금하신 점이 있으시다면 언제든지 편하게 연락주세요.
+				</div>
+				<ul>
+					<li>
+						<div class="info">
+							<i class="far fa-calendar-alt"></i> 21st December, 1991
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fas fa-phone"></i> +82 10-1234-5678
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fas fa-envelope"></i> chulsukim@testsite.com
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fas fa-home"></i> 102, Bongeunsa-ro, Gangnam-gu, Seoul, Republic of Korea
+						</div>
+					</li>
+				</ul>
+				<div class="sns">
+					<a>
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a>
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a>
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<a>
+						<i class="fab fa-google-plus-g"></i>
+					</a>
+					<a>
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="services-area" id="service">
+			<div class="title">
+				SERVICES
+			</div>
+			<div class="container">
+
+				<div class="item">
+					<div class="icon"><span><i class="fab fa-js-square"></i></span></div>
+					<div class="service">JAVASCRIPT</div>
+					<div class="content">자바스크립트는 객체 기반의 스크립트 프로그래밍 언어입니다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있습니다. 또한 Node.js와 같은 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있습니다. 저는 이러한 자바스크립트를 이용하여 웹페이지를 개발하고 있습니다.</div>
+				</div>
+
+				<div class="item">
+					<div class="icon"><span><i class="fab fa-java"></i></span></div>
+					<div class="service">JAVA</div>
+					<div class="content">자바는 썬 마이크로시스템즈의 제임스 고슬링(James Gosling)과 다른 연구원들이 개발한 객체 지향적 프로그래밍 언어입니다. 현재 웹 애플리케이션 개발에 가장 많이 사용하는 언어 가운데 하나이고, 모바일 기기용 소프트웨어 개발에도 널리 사용하고 있습니다. 현재 버전 10까지 출시되었습니다. 저는 이러한 자바를 이용하여 웹 서버 개발을 하고 있습니다.</div>
+				</div>
+
+				<div class="item">
+					<div class="icon"><span><i class="fas fa-database"></i></span></div>
+					<div class="service">DATABASE</div>
+					<div class="content">데이터베이스란 여러 사람이 공유하고 사용할 목적으로 통합 관리되는 정보의 집합입니다. 논리적으로 연관된 하나 이상의 자료의 모음으로 그 내용을 고도로 구조화함으로써 검색과 갱신의 효율화를 꾀한 것입니다. 즉, 몇 개의 자료 파일을 조직적으로 통합하여 자료 항목의 중복을 없애고 자료를 구조화하여 기억시켜 놓은 자료의 집합체라고 할 수 있습니다. 이러한 데이터베이스에는 다양한 솔루션들이 존재하는데 저는 그 중에서도 Oracle, MySql, MariaDB를 사용합니다. 저는 이러한 솔루션을 이용하여 웹 시스템의 데이터베이스를 구축하는 일을 하고 있습니다.</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio-area" id="portfolio">
+			<div class="title">
+				PORTFOLIO
+			</div>
+			<div class="filter">
+				<ul class="list">
+					<li class="listItem active" id="all">
+						All
+					</li>
+					<li class="listItem" id="uiux">
+						UI/UX
+					</li>
+					<li class="listItem" id="java">
+						JAVA
+					</li>
+					<li class="listItem" id="db">
+						DB
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="filterItem db">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/programming-2115930_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem java">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/laptop-2588074_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem uiux java">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/work-731198_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem uiux">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/web-design-2906159_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem java">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/code-1839406_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem db">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/programming-593312_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem uiux">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/laptop-926775_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem db">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/computer-1209641_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem java db">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/coding-1853305_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+				<div class="filterItem uiux db">
+					<div class="image">
+						<div class="overlay"><i class="far fa-image"></i></div>
+						<img src="img/laptop-2557586_1920.jpg">
+					</div>
+					<div class="main">
+						메인 제목
+					</div>
+					<div class="sub">
+						부 제목
+					</div>
+					<div class="text">
+						포트 폴리오 상세 설명
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="review-area" id="review">
+			<div class="title">
+				REVIEW
+			</div>
+			<div class="container">
+
+				<a class="review-prev" id="reviewPrev">&#10094;</a>
+				<a class="review-next" id="reviewNext">&#10095;</a>
+
+				<div class="review-slide res-show">
+					<div class="image">
+						<img src="img/profile/actress-2868705_1920.jpg">
+					</div>
+					<div class="name">
+						Sellena
+					</div>
+					<div class="job">
+						Actress
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide show">
+					<div class="image">
+						<img src="img/profile/adult-1845814_1920.jpg">
+					</div>
+					<div class="name">
+						Matthew
+					</div>
+					<div class="job">
+						Doctor
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide show">
+					<div class="image">
+						<img src="img/profile/beauty-1319951_1920.jpg">
+					</div>
+					<div class="name">
+						Lilly
+					</div>
+					<div class="job">
+						Student
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/flower-child-336658_1920.jpg">
+					</div>
+					<div class="name">
+						Adela
+					</div>
+					<div class="job">
+						Lawyer
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/girl-looking-away-1995624_1920.jpg">
+					</div>
+					<div class="name">
+						Bella
+					</div>
+					<div class="job">
+						Artist
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/winters-1919143_1920.jpg">
+					</div>
+					<div class="name">
+						Chloe
+					</div>
+					<div class="job">
+						Florist
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/woman-690118_1920.jpg">
+					</div>
+					<div class="name">
+						Donna
+					</div>
+					<div class="job">
+						Engineer
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/woman-918707_1920.jpg">
+					</div>
+					<div class="name">
+						Ellen
+					</div>
+					<div class="job">
+						Broadcaster
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/woman-1246844_1280.jpg">
+					</div>
+					<div class="name">
+						Grace
+					</div>
+					<div class="job">
+						Actor
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/woman-1466628_1920.jpg">
+					</div>
+					<div class="name">
+						Jane
+					</div>
+					<div class="job">
+						Model
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/young-woman-1149643_1920.jpg">
+					</div>
+					<div class="name">
+						Joy
+					</div>
+					<div class="job">
+						Accountant
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="far fa-star"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/actress-2868705_1920.jpg">
+					</div>
+					<div class="name">
+						Sellena
+					</div>
+					<div class="job">
+						Actress
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star-half-alt"></span>
+					</div>
+				</div>
+
+				<div class="review-slide hide">
+					<div class="image">
+						<img src="img/profile/adult-1845814_1920.jpg">
+					</div>
+					<div class="name">
+						Matthew
+					</div>
+					<div class="job">
+						Doctor
+					</div>
+					<div class="text">
+						<i>
+						웹 사이트 개발 서비스에 대해 만족하고 있습니다. 제 자신만의 포트폴리오 페이지를 갖게 되어 너무나 기쁩니다. 저는 이 서비스를 추천합니다.</i>
+					</div>
+					<div class="rating">
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+						<span class="fas fa-star"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer-area">
+		<div class="sns">
+			<div class="item" id="facebook"><i class="fab fa-facebook-square"></i></div>
+			<div class="item" id="twitter"><i class="fab fa-twitter"></i></div>
+			<div class="item" id="linkedin"><i class="fab fa-linkedin"></i></div>
+			<div class="item" id="google"><i class="fab fa-google-plus"></i></div>
+			<div class="item" id="instagram"><i class="fab fa-instagram"></i></div>
+		</div>
+		<div class="info">
+			<p>Copyright © 2018 Test Corp. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<div id="portfolioModal" class="modal"b>
+		<span class="close" id="modalClose">&times;</span>
+		<div class="container">
+			<img id="modalImage">
+			<div id="modalMain" class="modal-main"></div>
+			<div id="modalSub" class="modal-sub"></div>
+			<div id="modalText" class="modal-text"></div>
+		</div>
+	</div>
+
+	<script src="portfolio.js"></script>
+</body>
+</html>
